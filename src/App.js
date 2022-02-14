@@ -27,26 +27,26 @@ class App extends Component {
   render() {
     return (
       <>
-      <nav className="navbar">
-        <div className="navitems">
-          <h1>Shoppy </h1>
-          
-          
-          <button className="fetchbutton" onClick={this.updateState}>
-            Get User Data
-          </button>
+        <nav className="navbar">
+          <div className="navitems">
+            <h1> AstralSpec </h1>
+
+
+            <button className="fetchbutton" onClick={this.updateState}>
+              Get User Data
+            </button>
+          </div>
+        </nav>
+        <div className="heading">
+          <h1>Users</h1>
         </div>
-      </nav>
-      <div className="heading">
-        <h1>Our Team Members</h1>
-      </div>
-      <div className="fetchuser">
-        <Users loading={this.state.loading} users={this.state.users_data} />
-      </div>
-      
-    </>
-  );
-}
+        <div className="fetchuser">
+          <Users loading={this.state.loading} users={this.state.users_data} />
+        </div>
+
+      </>
+    );
+  }
 }
 
 
